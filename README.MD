@@ -1,6 +1,6 @@
 # STOS
 
-### Why making an Operating System today?
+### Why make an Operating System today?
 
 Because we felt the need for something simple, that combines what's good about  past and modern technoligies.
 
@@ -27,6 +27,6 @@ This project took inspiration from the [Suckless philosofy](https://suckless.org
 
 
 ## Sauce
-Every doc or wiki where we got the information out of
+Every doc or wiki where we got the information out of:
 - [OSDev](https://osdev.org)
 - Ace's old failed attempt [AceOS](https://github.com/Ace-69/AceOS)
