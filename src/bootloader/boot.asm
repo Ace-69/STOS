@@ -43,7 +43,7 @@ puts:
     push si
     push ax
 
-.loop
+.loop:
     lodsb           ; load the next byte from si into al
     or al, al       ; check if al is 0
     jz .done        ; if al is 0, we're done
@@ -142,7 +142,7 @@ disk_read:
     pop ax                                  ; AL = number of sectors to read
 
     mov ah, 02h                             ; read sector function
-    mov di 3
+    mov di, 3
 
 .retry:
     pusha                                   ; save registers, you never know

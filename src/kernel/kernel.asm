@@ -13,7 +13,7 @@ puts:
     push si
     push ax
 
-.loop
+.loop:
     lodsb           ; load the next byte from si into al
     or al, al       ; check if al is 0
     jz .done        ; if al is 0, we're done
