@@ -186,4 +186,4 @@ msg_hello:                  db 'Welcome to STOS', ENDL ,0
 floppy_error_msg:           db 'Read from disk failed.', ENDL, 0
 
 times 510-($-$$) db 0 ; fill the rest of the sector with 0s
-dw 0xaa55 ; magic number
+dw 0xaa55 ; magic number (required by some BIOSes)

@@ -4,12 +4,12 @@
 
 Because we felt the need for something simple, that combines what's good about  past and modern technoligies.
 
-This project took inspiration from the [Suckless philosofy](https://suckless.org) at it's core.
+This project takes inspiration from the [Suckless philosofy](https://suckless.org) at it's core.
 
 ### Objectives for The Future
 
 #### Short term
-- [ ] Making the system bootable 
+- [x] Making the system bootable 
 
 #### Medium term
 - [ ] Keyboard integration
