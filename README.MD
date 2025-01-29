@@ -20,10 +20,10 @@ Step 3: run `make`
 Step 4: run it (if you have quemu you can just use `./run.sh`)   
 
 
-### Objectives for The Future
+## Objectives for The Future
 <details open>
 
-<summary><h4>Short Term</h4></summary>
+<summary><h3>Short Term</h3></summary>
 
 - [x] Making the system bootable 
 - [x] Stop using ASM get C
@@ -33,7 +33,7 @@ Step 4: run it (if you have quemu you can just use `./run.sh`)
 </details>
 <details open>
 
-<summary><h4>Medium term</h4></summary>
+<summary><h3>Medium term</h3></summary>
 
 - [ ] Implement a simple shell
 - [x] Make the FileSystem (we got fat12 for now)
@@ -41,7 +41,7 @@ Step 4: run it (if you have quemu you can just use `./run.sh`)
 </details>
 <details open>
 
-<summary><h4>Long Term</h4></summary>
+<summary><h3>Long Term</h3></summary>
 
 - [ ] Networking
 - [ ] Full Keyboard integration
