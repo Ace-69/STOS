@@ -27,8 +27,9 @@ This project takes inspiration from the [Suckless philosofy](https://suckless.or
 
 - [x] Making the system bootable 
 - [x] Stop using ASM get C
-- [x] give printf to C
-- [ ] give some kind of scanf to C
+- [x] Give printf to C
+- [ ] Give some kind of scanf to C
+- [ ] Need more file order it's a total mess rn
 
 </details>
 <details open>
@@ -54,9 +55,11 @@ This project takes inspiration from the [Suckless philosofy](https://suckless.or
 </details>
 
 ## Sauce
-Every doc or wiki where we got the information out of:
-- [OSDev](https://osdev.org)
-- Ace's old failed attempt [AceOS](https://github.com/Ace-69/AceOS)
-- [NASM](https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/doc/nasmdoc.pdf)
-- [Intel Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html#combined)
-- [Open watcom](https://github.com/open-watcom/open-watcom-v2) docs found in install dir
+Every doc or wiki where we got the information out of:  
+- [OSDev](https://osdev.org) most of the info can be found here   
+- Ace's old failed attempt [AceOS](https://github.com/Ace-69/AceOS)  
+- [NASM](https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/doc/nasmdoc.pdf)  
+- [Intel Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html#combined)  
+- [Open watcom](https://github.com/open-watcom/open-watcom-v2) docs found in install dir  
+- [CDECL](https://en.wikipedia.org/wiki/X86_calling_conventions#cdecl) Calling conventions  
+

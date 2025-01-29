@@ -7,6 +7,7 @@ bits 16 ; 16-bit real mode
 ; FAT12 header
 
 jmp short start
+nop
 
 
 bdb_OEM:                        db 'MSWIN4.1'                       ;8bytes
@@ -28,7 +29,7 @@ bdb_largeSector_count:          dd 0
 ebr_driveNumber:                db 0                                ; 0x00 = floppy,  0x80 = hard drive
                                 db 0                                ; reserved
 ebr_signature:                  db 29h                              ; 0x29 = extended boot record
-ebr_volumeID:                   dd 12h, 24h, 48h, 96h               ; volume serial number, number doesn't matter
+ebr_volumeID:                   dd 12h, 34h, 56h, 78h               ; volume serial number, number doesn't matter
 ebr_volumeLabel:                db 'STOS       '                    ; volume label, 11 bytes padded with spaces
 ebr_systemID:                   db 'FAT12   '                       ; file system identifier, 8 bytes padded with spaces
 
@@ -145,9 +146,9 @@ start:
     shr ax, 4
     jmp .next_cluster_after
 .even:
-    and ax, 0FFFh
+    and ax, 0x0FFF
 .next_cluster_after:
-    cmp ax, 0FF8h                           ; end of chain
+    cmp ax, 0x0FF8                          ; end of chain
     jae .read_finish
     mov [kernel_cluster], ax                
     jmp .load_kernel_loop
@@ -175,21 +176,24 @@ wait_key_and_reboot:
     mov ah, 0
     int 16h                                 ; BIOS interrupt, wait for key press
     jmp 0FFFFh:0                            ; jump to beginning of BIOS, should reboot
-.halt:
-    cli                                     ; disable interrupts
-    jmp .halt                               ; infinite loop
+;.halt:
+;    cli                                     ; disable interrupts
+;    hlt                                     ; halt system
 ; print a string to the screen
 puts:
     push si
     push ax
+    ;push bx
 .loop:
     lodsb           ; load the next byte from si into al
     or al, al       ; check if al is 0
     jz .done        ; if al is 0, we're done
     mov ah, 0x0E    ; teletype output
+    ;mov bh, 0       ; page number to 0
     int 0x10        ; call BIOS interrupt
     jmp .loop       ; loop back
 .done:
+    ;pop bx
     pop ax
     pop si
     ret
@@ -262,11 +266,11 @@ disk_reset:
     ret
 msg_hello:                  db 'Loading....', ENDL ,0
 floppy_error_msg:           db 'Read from disk failed.', ENDL, 0
-kernel_not_found_msg:       db 'Kernel not found.', ENDL, 0
-file_kernel_bin:            db 'KERNEL  BIN', 0
+kernel_not_found_msg:       db 'Stage 2 not found.', ENDL, 0
+file_kernel_bin:            db 'STAGE2  BIN', 0
 kernel_cluster:             dw 0
 KERNEL_LOAD_SEGMENT         equ 0x2000
 KERNEL_LOAD_OFFSET          equ 0
 times 510-($-$$) db 0 ; fill the rest of the sector with 0s
-dw 0xaa55 ; magic number (required by some BIOSes)
+dw 0aa55h ; magic number (required by some BIOSes)
 buffer: 
