@@ -23,25 +23,26 @@ Step 4: run it (if you have quemu you can just use `./run.sh`)
 ### Objectives for The Future
 <details open>
 
-<summary>
-    #### Short term
-</summary>
+<summary><h4>Short Term</h4></summary>
+
 - [x] Making the system bootable 
 - [x] Stop using ASM get C
 - [x] give printf to C
 - [ ] give some kind of scanf to C
+
 </details>
 <details open>
 
 <summary><h4>Medium term</h4></summary>
+
 - [ ] Implement a simple shell
 - [x] Make the FileSystem (we got fat12 for now)
+
 </details>
 <details open>
 
-<summary>
-    #### Long term
-</summary>
+<summary><h4>Long Term</h4></summary>
+
 - [ ] Networking
 - [ ] Full Keyboard integration
 - [ ] Full Mouse integration
@@ -49,6 +50,7 @@ Step 4: run it (if you have quemu you can just use `./run.sh`)
 - [ ] A way to run executables
 - [ ] Implement a simple file manager
 - [ ] Implement a simple text editor
+
 </details>
 
 ## Sauce
