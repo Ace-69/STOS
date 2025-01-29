@@ -33,9 +33,7 @@ Step 4: run it (if you have quemu you can just use `./run.sh`)
 </details>
 <details open>
 
-<summary>
-    #### Medium term
-</summary>
+<summary><h4>Medium term</h4></summary>
 - [ ] Implement a simple shell
 - [x] Make the FileSystem (we got fat12 for now)
 </details>
