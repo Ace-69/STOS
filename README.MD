@@ -8,16 +8,16 @@ This project takes inspiration from the [Suckless philosofy](https://suckless.or
 
 
 ## How-To (use edition)
-Step 1: Go in releases  
-Step 2: Download the latest STOS.iso file  
-Step 3: You are on your own. Emulate it, burn it, your choice  
-(we do not take responsibility for any damage)  
+> Step 1: Go in releases  
+> Step 2: Download the latest STOS.iso file  
+> Step 3: You are on your own. Emulate it, burn it, your choice  
+>> (we do not take responsibility for any damage)  
 
 ## How-To (compile edition)
-Step 1: Git it  
-Step 2: get in that folder  
-Step 3: run `make`   
-Step 4: run it (if you have quemu you can just use `./run.sh`)   
+> Step 1: Git it  
+> Step 2: get in that folder  
+> Step 3: run `make`   
+> Step 4: run it (if you have quemu you can just use `./run.sh`)   
 
 
 ## Objectives for The Future
