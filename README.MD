@@ -63,4 +63,4 @@ Every doc or wiki where we got the information out of:
 - [Open watcom](https://github.com/open-watcom/open-watcom-v2) docs found in install dir  
 - [CDECL](https://en.wikipedia.org/wiki/X86_calling_conventions#cdecl) Calling conventions  
 
-#PREPARING FOR STOSV2
+#PREPARING FOR STOS v2
